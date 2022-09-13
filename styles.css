@@ -24,16 +24,22 @@ ul {
   gap: 2rem;
 }
 
+section {
+  display: flex;
+  justify-content: center;
+}
+
 .width-container {
   width: 960px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 /* header */
 
 header, 
-.intro {
+.intro,
+footer {
   display: flex;
   justify-content: center;
   background: #1F2937;
@@ -57,13 +63,8 @@ header ul {
 
 /* intro */
 
-section {
-  display: flex;
-  justify-content: center;
-}
-
 section .width-container {
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .intro h1 {
@@ -78,17 +79,16 @@ section .width-container {
   padding: 0.5rem 0;
 }
 
-.intro .signup {
+.signup {
   flex: 0 1 auto;
   background:#3882f6;
   color: #fff;
-  padding: 12px 12px;
+  padding: 6px 10px;
   border-radius: 7px;
-  width: 120px;
+  width: 110px;
   text-align: center;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
+
 .intro .image {
   width: 600px;
   height: 100%;
@@ -98,4 +98,77 @@ section .width-container {
   color: white;
   background: rgb(140, 150, 153);
   margin-left: 50px;
+}
+
+/* miniatures */
+
+.miniatures .width-container {
+  flex-direction: column;
+}
+
+.miniatures h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.miniatures ul {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.miniatures .image {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #3882f6;
+  border-radius: 6px;
+}
+
+.miniatures li {
+  text-align: center;
+}
+
+/* quote */
+
+.quote {
+  background: #e5e7eb;
+}
+
+.quote .width-container {
+  flex-direction: column;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  color: #1F2937;
+  font-weight: lighter;
+}
+
+.quote-author {
+  margin-top: 10px;
+  font-weight: bolder;
+  text-align: right;
+}
+
+/* call to action */
+
+.action .width-container {
+  background:#3882f6;
+  color: #fff;
+  margin: 60px 0;
+  padding: 20px 40px;
+  border-radius: 6px;
+  justify-content: space-between;
+}
+
+.action .signup {
+  border: 1px #fff solid;
+}
+
+
+/* footer */
+
+footer {
+  padding: 30px 0;
 }
