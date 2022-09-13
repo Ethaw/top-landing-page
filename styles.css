@@ -16,6 +16,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -69,28 +70,31 @@ section .width-container {
 
 .intro h1 {
   font-size: 48px;
-  font-weight: 900;
+  font-weight: 800;
   font-weight: extra-bold;
   color: #f9faf8
 }
 
 .intro p {
   font-size: 18px;
-  padding: 0.5rem 0;
+  font-weight: 300;
+  margin: 0.5em 0;
 }
 
 .signup {
   flex: 0 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background:#3882f6;
   color: #fff;
-  padding: 6px 10px;
   border-radius: 7px;
-  width: 110px;
-  text-align: center;
+  width: 100px;
+  height: 30px;
 }
 
 .intro .image {
-  width: 600px;
+  width: 900px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -100,33 +104,42 @@ section .width-container {
   margin-left: 50px;
 }
 
+
 /* miniatures */
 
-.miniatures .width-container {
+.miniatures .width-container,
+.quote .width-container {
   flex-direction: column;
+  width: 780px;
 }
 
 .miniatures h1 {
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .miniatures ul {
-  flex-direction: row;
+  margin-top: 40px;
+  display: flex;
   justify-content: space-between;
 }
 
 .miniatures .image {
   display: block;
-  width: 100px;
-  height: 100px;
-  border: 2px solid #3882f6;
+  width: 100%;
+  height: 130px;
+  border: 3px solid #3882f6;
   border-radius: 6px;
+  margin-bottom: 8px;
 }
 
 .miniatures li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  padding-bottom: 60px;
 }
+
 
 /* quote */
 
@@ -135,7 +148,7 @@ section .width-container {
 }
 
 .quote .width-container {
-  flex-direction: column;
+  padding: 80px 0;
 }
 
 .quote-text {
@@ -151,13 +164,14 @@ section .width-container {
   text-align: right;
 }
 
+
 /* call to action */
 
 .action .width-container {
   background:#3882f6;
   color: #fff;
   margin: 60px 0;
-  padding: 20px 40px;
+  padding: 40px 60px;
   border-radius: 6px;
   justify-content: space-between;
 }
